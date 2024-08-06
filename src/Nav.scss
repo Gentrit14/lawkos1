@@ -1,0 +1,148 @@
+.nav{
+    background-color: #FEFEFE;
+    padding: 15px 7%;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .title{
+        color: #000000;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        svg{
+            font-size: 40px;
+            margin-right: 7px;
+            margin-top: 0px;
+        }
+    }
+    .links{
+        display: flex;
+        align-items: center;
+    }
+    .nav-link{
+        margin: 0 15px;
+        padding: 7.5px 10px;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        .inner-link svg{
+            transition: 0.25s;
+        }
+        &:hover{
+            .nav-megamenu{
+                display: flex;
+            }
+            
+            .inner-link svg{
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    .inner-link{
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+        // border: 2px solid #fff;
+    }
+
+    .inner-link:hover{
+        color: #8100fa;
+    }
+    .auth{
+        font-size: 20px;
+        color: #fff;
+        padding: 20px 0px;
+        border-radius: 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .number{
+        color: #000 ;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        .number-detail{
+            display: block;
+            padding: 10px;
+        }
+        .number-detail h6{
+            margin-bottom: -20px;
+            font-size: 18px;
+        }
+        .number-detail p{
+           font-size: 15px;
+        }
+         svg{
+            margin-top: 30px;
+            font-size: 30px;
+        }
+    }
+    .contact{
+        background: #000000;
+        border-radius: 70px;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 70px;
+        text-decoration: none;
+    }
+    .nav-megamenu{
+        width: 2000px;
+        background: #eeeeee;
+        position: absolute;
+        top: 40px;
+        padding: 10px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        display: none;
+        }
+        .menu-link{
+            width: 43.5%;
+            border-radius: 20px;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: #0a0a0a;
+                
+            }
+        .menu-link a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid #d89b18;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-right: 15px;
+            color: #d89b18;
+        }
+        h6{
+            font-size: 19px;
+            color: #d89b18;
+            margin-bottom: -10px;
+            text-decoration: none;
+        }
+        p{
+            font-size: 18px;
+            color: #d89b18;
+            margin-bottom: 50px;
+            text-decoration: none;
+        }
+    }
+}

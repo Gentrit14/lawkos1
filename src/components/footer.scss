@@ -1,0 +1,24 @@
+.footer{
+    background: #0a0a0a;
+    color: #fff;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .col{
+        width: fit-content;
+        margin: 25px 50px;
+    }
+    a{
+        color: #fff;
+        font-size: 20px;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+    h6{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
