@@ -1,41 +1,65 @@
-import { FiFlag, FiShield } from "react-icons/fi";
-import { BiWalletAlt, BiKey } from "react-icons/bi";
+import { FiBriefcase, FiHome, FiDollarSign, FiShoppingCart, FiShield, FiUsers, FiGlobe, FiZap, FiPenTool, FiKey, FiActivity } from "react-icons/fi";
 
 export const NavData = [
     {
-        icon:<FiFlag />,
-        title: 'Title1',
-        to:'/',
-        description:'Lorem Ipsum dolor sit amet....'
+        icon: <FiBriefcase />,
+        class: 'genti1',
+        title: 'Corporate Law',
+        to: '/',
     },
     {
-        icon:<FiShield />,
-        title: 'Title2',
-        to:'/',
-        description:'Lorem Ipsum dolor sit amet....'
+        icon: <FiHome />,
+        title: 'Real Estate',
+        to: '/',
     },
     {
-        icon:<BiWalletAlt />,
-        title: 'Title3',
-        to:'/',
-        description:'Lorem Ipsum dolor sit amet....'
+        icon: <FiDollarSign />,
+        title: 'Tax & Customs Laws',
+        to: '/',
     },
     {
-        icon:<FiShield />,
-        title: 'Title2',
-        to:'/',
-        description:'Lorem Ipsum dolor sit amet....'
+        icon: <FiShoppingCart />,
+        title: 'Public Procurement',
+        to: '/',
     },
     {
-        icon:<BiWalletAlt />,
-        title: 'Title3',
-        to:'/',
-        description:'Lorem Ipsum dolor sit amet....'
+        icon: <FiShield />,
+        title: 'Banking & Finance',
+        to: '/',
     },
     {
-        icon:<BiKey />,
-        title: 'Title4',
-        to:'/',
-        description:'Lorem Ipsum dolor sit amet....'
+        icon: <FiUsers />,
+        title: 'Insurance',
+        to: '/',
+    },
+    {
+        icon: <FiGlobe />,
+        title: 'Energy & Infrastructure',
+        to: '/',
+    },
+    {
+        icon: <FiUsers />,
+        title: 'Family Law',
+        to: '/',
+    },
+    {
+        icon: <FiZap />,
+        title: 'ICT Sector',
+        to: '/',
+    },
+    {
+        icon: <FiPenTool />,
+        title: 'Labor & Employment',
+        to: '/',
+    },
+    {
+        icon: <FiKey />,
+        title: 'Intellectual Property Law',
+        to: '/',
+    },
+    {
+        icon: <FiActivity />,
+        title: 'Criminal Law',
+        to: '/',
     }
-]
+];
