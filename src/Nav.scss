@@ -14,6 +14,7 @@
         font-weight: bold;
         display: flex;
         align-items: center;
+
         svg {
             font-size: 40px;
             margin-right: 7px;
@@ -24,7 +25,6 @@
     .links {
         display: flex;
         align-items: center;
-        justify-content: center;
         justify-content: center;
         flex-grow: 0.4;
     }
@@ -119,7 +119,7 @@
         width: 100%;
         background: #fff;
         height: 45%;
-        position: fixed;
+        position: fixed; /* Changed from fixed to absolute */
         left: 0;
         top: 70px;
         padding: 20px;
@@ -138,6 +138,7 @@
         .menu-link {
             width: 20%;
             margin: 20px;
+            height: auto;
             align-items: center;
             margin-bottom: 20px;
             transition: all 0.3s ease;
@@ -242,7 +243,28 @@
          
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1270px) {
+        .links {
+            justify-content: space-between; /* Space out links evenly */
+            margin: 0; /* Remove extra margins */
+            .nav-link{
+                padding: 7.5% 0px;
+            }
+            .inner-link{
+                font-size: 16px;
+            }
+        }
+
+        .auth {
+            font-size: 16px; /* Reduce font size */
+            .contact {
+                padding: 10px 20px; /* Adjust padding */
+                font-size: 14px; /* Reduce font size */
+            }
+        }
+    }
+
+    @media (max-width: 1000px) {
         .links {
             display: none;
             flex-direction: column;
@@ -260,7 +282,12 @@
 
             .nav-link {
                 margin: 10px 0;
+                padding: 10px 0;
                 text-align: center;
+                .inner-link{
+                    font-size: 20px;
+                    border-bottom: 1px solid #ccc;
+                }
             }
 
             .auth {
@@ -275,21 +302,6 @@
             .number {
                 align-items: center;
                 justify-content: center;
-            }
-        }
-
-        @media (max-width: 1270px) {
-            .links {
-                justify-content: space-between; /* Space out links evenly */
-                margin: 0; /* Remove extra margins */
-            }
-    
-            .auth {
-                font-size: 16px; /* Reduce font size */
-                .contact {
-                    padding: 10px 20px; /* Adjust padding */
-                    font-size: 14px; /* Reduce font size */
-                }
             }
         }
 
