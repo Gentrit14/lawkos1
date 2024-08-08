@@ -4,46 +4,38 @@ import './Nav.scss';
 import { GoLaw } from "react-icons/go";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { LuPhoneCall } from "react-icons/lu";
-import { FaBars, FaTimes } from "react-icons/fa"; // Add these icons for hamburger menu
+import { FaBars, FaTimes } from "react-icons/fa";
 import ProductsMegamenu from './ProductsMegamenu';
 
 const Nav = () => {
     const [isMobile, setIsMobile] = useState(false);
-    const [activeLink, setActiveLink] = useState(null);
 
     const toggleMenu = () => setIsMobile(!isMobile);
-    const toggleSubMenu = (link) => {
-        if (activeLink === link) {
-            setActiveLink(null);
-        } else {
-            setActiveLink(link);
-        }
-    };
 
     return (
         <div className='nav'>
             <Link to='/' className='title'><GoLaw />LAWKOS</Link>
 
             <div className={isMobile ? 'links mobile open' : 'links'}>
-                <div className={`nav-link ${activeLink === 'about' ? 'active' : ''}`} onClick={() => toggleSubMenu('about')}>
+                <div className='nav-link'>
                     <Link to='/' className='inner-link'>About</Link>
                 </div>
-                <div className={`nav-link ${activeLink === 'services' ? 'active' : ''}`} onClick={() => toggleSubMenu('services')}>
+                <div className='nav-link'>
                     <div className="inner-link">
                         Services <MdKeyboardArrowDown />
                     </div>
-                    {activeLink === 'services' && <ProductsMegamenu />}
+                    <ProductsMegamenu />
                 </div>
-                <div className={`nav-link ${activeLink === 'resources' ? 'active' : ''}`} onClick={() => toggleSubMenu('resources')}>
+                <div className='nav-link'>
                     <div className="inner-link">
                         Resources <MdKeyboardArrowDown />
                     </div>
-                    {activeLink === 'resources' && <ProductsMegamenu />}
+                    <ProductsMegamenu />
                 </div>
-                <div className={`nav-link ${activeLink === 'news' ? 'active' : ''}`} onClick={() => toggleSubMenu('news')}>
+                <div className='nav-link'>
                     <Link to='/' className='inner-link'>News</Link>
                 </div>
-                <div className={`nav-link ${activeLink === 'careers' ? 'active' : ''}`} onClick={() => toggleSubMenu('careers')}>
+                <div className='nav-link'>
                     <Link to='/' className='inner-link'>Careers</Link>
                 </div>
                 <div className='auth'>
