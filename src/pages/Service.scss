@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.services-section {
+    padding-top: 16%;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  
+    .services-title {
+      font-size: 4rem;
+      margin-bottom: -110px;
+      position: relative;
+      font-weight: 300;
+  
+      &:after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        margin: 15px 0;
+      }
+    }
+  
+    .services-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    max-width: 1300px;
+    margin-left: auto;
+    width: 64%;
+  
+      .text-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+  
+        .service {
+          max-width: 300px;
+  
+          h3 {
+            font-size: 1.75rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+          }
+  
+          p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+          }
+        }
+      }
+  
+      .service-image {
+        flex-shrink: 0;
+        
+        img {
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+          border-radius: 20px;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .services-content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 100px;
+        width: 90%;
+
+        .services-title{
+            margin-left: 20px;
+            font-size: 3rem;
+        }
+  
+        .service-image {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .nav {
     background-color: #FEFEFE;
     padding: 15px 7%;
     display: flex;
+    font-family: "Roboto", sans-serif;
     height: 60px;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +64,7 @@
     }
 
     .inner-link:hover {
-        color: #8100fa;
+        color: #a87f4d;
     }
 
     .auth {

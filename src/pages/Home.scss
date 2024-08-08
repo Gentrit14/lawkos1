@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 80vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+
+  .home-content {
+    background: #ffffff;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    width: 100%;
+
+    .home-content2 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 500px;
+      padding-top: 30px;
+      margin-left: auto;
+    }
+
+    h1 {
+      font-size: 2.9rem;
+      margin-bottom: 10px;
+      font-weight: 300;
+      width: 100%;
+      max-width: 400px;
+      float: left;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .consultation-button {
+      background-color: #a07509;
+      color: white;
+      border: none;
+      display: flex;
+      width: 100%;
+      max-width: 200px;
+      padding: 10px 20px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0a0a0a;
+      }
+      svg{
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .home-images {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    max-width: 1200px;
+
+    .image-container {
+      flex: 1;
+      width: 200px;
+      height: 450px;
+      background-size: cover;
+      border-radius: 20px;
+      background-position: center center;
+    }
+
+    .left {
+      background-image: url('../img/JusticeLady2.jpeg'); // replace with the correct path to your image
+      background-position: left center;
+    }
+
+    .center {
+      background-image: url('../img/JusticeLady2.jpeg'); // replace with the correct path to your image
+      background-position: center center;
+      width: 250px;
+      height: 520px;
+    }
+
+    .right {
+      background-image: url('../img/JusticeLady2.jpeg'); // replace with the correct path to your image
+      background-position: right center;
+    }
+  }
+
+  .seal {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    margin-left: 92%;
+    margin-top: 18%;
+    width: 205px;
+    height: 180px;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .home-content {
+      padding: 10px;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+
+      .home-content2{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+      }
+
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .consultation-button {
+        margin-right: auto;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        margin-left: auto;
+      }
+    }
+
+    .home-images {
+      flex-direction: column;
+      gap: 5px;
+
+      .image-container {
+        height: 150px;
+        width: 150px;
+      }
+
+      .center {
+        height: 200px;
+        width: 200px;
+      }
+    }
+
+    .seal {
+      position: static;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .home-content {
+      h1 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      .consultation-button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        margin-left: auto;
+      }
+    }
+
+    .home-images {
+        display: flex;
+        height: 90vh;
+        align-items: center;
+      .image-container {
+        height: 250px;
+        width: 300px;
+        
+      }
+
+      .center {
+        height: 250px;
+        width: 300px;
+      }
+    }
+
+    .seal {
+      width: 170px;
+      height: 150px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
