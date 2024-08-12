@@ -20,7 +20,7 @@ const About = () => {
           <div className='about-right2'>
           <div className="about-right">
             <h1 className="experience-number">15</h1>
-            <p className="experience-text">Years of experience</p>
+            <p className="experience-text">Years of experience </p>
             <p className="about-description">
               Founded in 2008, LawKos is committed to the pursuit of justice in our country and more. Our team of dedicated
               professionals works tirelessly to serve our community. We offer legal services and consultancy in different areas.

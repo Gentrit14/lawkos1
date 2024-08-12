@@ -1,10 +1,9 @@
 import React from 'react';
 import './Home.scss';
-import ladyJusticeImage1 from '../img/JusticeLady3.jpeg'; // replace with the correct path to your image
-import ladyJusticeImage2 from '../img/JusticeLady4.jpeg'; // replace with the correct path to your image
-import ladyJusticeImage3 from '../img/JusticeLady5.jpeg'; // replace with the correct path to your image
-import sealImage from '../img/service1.png'; // replace with the correct path to your image
-import { FaArrowRightLong } from "react-icons/fa6";
+import ladyJusticeImage1 from '../img/Lady1.png';
+import ladyJusticeImage2 from '../img/Lady2.png';
+import ladyJusticeImage3 from '../img/Lady3.png';
+import sealImage from '../img/service1.png';
 
 const Home = () => {
   return (
@@ -16,7 +15,7 @@ const Home = () => {
           We offer legal and consultancy services tailored to our clients' needs.
           Wherever business takes you, we are here to help.
         </p>
-        <button className="consultation-button">Get a free consultation <FaArrowRightLong /></button>
+        <button className="consultation-button">Get a free consultation <span>&rarr;</span></button>
         </div>
       </div>
       <div className="home-images">

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.practice-areas {
+    padding: 50px 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 0px;
+        border: 2px solid #000;
+    }
+    .container2 {
+        display: flex;
+        max-width: 1300px;
+        margin: 0 auto;
+        border: 2px solid #000;
+    }
+
+    h2 {
+        font-size: 60px;
+        font-weight: 400;
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 20px;
+        &:after {
+            content: '';
+            display: block;
+            width: 130px;
+            height: 2px;
+            background-color: black;
+            margin: 15px 0;
+          }
+    }
+
+
+    .practice-area-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        border: 2px solid #000;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .practice-area {
+        text-align: left;
+
+        .icon {
+            font-size: 60px;
+            color: #a87f4d;
+            margin-bottom: 20px;
+        }
+        
+
+        h3 {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            width: 80%;
+            font-weight: 400;
+            color: #666;
+            line-height: 1.6;
+        }
+    }
+
+    .view-all-areas {
+        display: inline-block;
+        margin-top: 40px;
+        font-size: 18px;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        border: 2px soldi #000;
+        background-color: transparent;
+        color: #000;
+        text-decoration: none;
+
+        span {
+            font-size: 20px;
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover span {
+            transform: translateX(5px);
+        }
+    }
+}

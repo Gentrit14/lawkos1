@@ -5,6 +5,7 @@ import { GoLaw } from "react-icons/go";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { LuRectangleVertical } from "react-icons/lu";
 import ProductsMegamenu from './ProductsMegamenu';
 
 const Nav = () => {
@@ -16,19 +17,23 @@ const Nav = () => {
         <div className='nav'>
             <Link to='/' className='title'><GoLaw />LAWKOS</Link>
 
-            <div className={isMobile ? 'links mobile open' : 'links'}>
+            <div className={isMobile ? 'links nav-mobile open' : 'links'}>
                 <div className='nav-link'>
                     <Link to='/' className='inner-link'>About</Link>
                 </div>
                 <div className='nav-link'>
                     <div className="inner-link">
-                        Services <MdKeyboardArrowDown />
+                        Services
+                        <LuRectangleVertical className='arrow1' />
+                        <MdKeyboardArrowDown className='arrow2'/>
                     </div>
                     <ProductsMegamenu />
                 </div>
                 <div className='nav-link'>
                     <div className="inner-link">
-                        Resources <MdKeyboardArrowDown />
+                        Resources 
+                        <LuRectangleVertical className='arrow1' />
+                        <MdKeyboardArrowDown className='arrow2'/>
                     </div>
                     <ProductsMegamenu />
                 </div>
