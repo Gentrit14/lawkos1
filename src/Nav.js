@@ -7,6 +7,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { LuRectangleVertical } from "react-icons/lu";
 import ProductsMegamenu from './ProductsMegamenu';
+import ResourcesMegamenu from './ResourcesMegamenu';
 
 const Nav = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -35,7 +36,7 @@ const Nav = () => {
                         <LuRectangleVertical className='arrow1' />
                         <MdKeyboardArrowDown className='arrow2'/>
                     </div>
-                    <ProductsMegamenu />
+                    <ResourcesMegamenu />
                 </div>
                 <div className='nav-link'>
                     <Link to='/' className='inner-link'>News</Link>

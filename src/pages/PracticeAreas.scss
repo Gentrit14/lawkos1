@@ -9,13 +9,13 @@
         max-width: 1300px;
         margin: 0 auto;
         padding: 0 0px;
-        border: 2px solid #000;
+        // border: 2px solid #000;
     }
     .container2 {
         display: flex;
         max-width: 1300px;
         margin: 0 auto;
-        border: 2px solid #000;
+        // border: 2px solid #000;
     }
 
     h2 {
@@ -38,7 +38,7 @@
     .practice-area-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        border: 2px solid #000;
+        // border: 2px solid #000;
         gap: 40px;
         margin-top: 40px;
     }
