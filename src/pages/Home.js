@@ -4,6 +4,7 @@ import ladyJusticeImage1 from '../img/Lady1.png';
 import ladyJusticeImage2 from '../img/Lady2.png';
 import ladyJusticeImage3 from '../img/Lady3.png';
 import sealImage from '../img/service1.png';
+import { HiArrowRight } from "react-icons/hi2";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
           We offer legal and consultancy services tailored to our clients' needs.
           Wherever business takes you, we are here to help.
         </p>
-        <button className="consultation-button">Get a free consultation <span>&rarr;</span></button>
+        <button className="consultation-button">Get a free consultation <HiArrowRight /></button>
         </div>
       </div>
       <div className="home-images">

@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .services-section {
-    padding-top: 16%;
+    padding-top: 5%;
     text-align: left;
     width: 100%;
     max-width: 1300px;
     display: flex;
     margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--body_background);
   
     .services-title {
       font-size: 4rem;
@@ -23,7 +23,7 @@
         display: block;
         width: 130px;
         height: 2px;
-        background-color: black;
+        background-color: var(--body-color);
         margin: 15px 0;
       }
     }
@@ -32,14 +32,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #ffffff;
-    padding: 20px;
-    display: flex;
-    border-radius: 10px;
-    max-width: 1300px;
-    margin-left: auto;
-    width: 64%;
-  
+      background-color: var(--body_background);
+      padding: 20px;
+      display: flex;
+      border-radius: 10px;
+      max-width: 1300px;
+      margin-left: auto;
+      width: 64%;
+    
       .text-content {
         flex: 1;
         display: flex;
@@ -59,7 +59,7 @@
           p {
             font-size: 1rem;
             line-height: 1.6;
-            color: #555;
+            color: var(--p-color);
           }
         }
       }

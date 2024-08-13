@@ -2,10 +2,33 @@
 
 .App{
     font-family: "Roboto", sans-serif;
+    
 }
 
 body, html {
+    background-color: var(--body_background);
+    color: var(--body-color);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  /* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px #0a0a0a;
+    border-radius: 0px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #949494;
+    border-radius: 10px;
   }

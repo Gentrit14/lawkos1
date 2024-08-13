@@ -17,7 +17,7 @@ const Nav = () => {
     return (
         <div className='nav'>
             <Link to='/' className='title'><GoLaw />LAWKOS</Link>
-
+           
             <div className={isMobile ? 'links nav-mobile open' : 'links'}>
                 <div className='nav-link'>
                     <Link to='/' className='inner-link'>About</Link>
@@ -57,7 +57,7 @@ const Nav = () => {
             </div>
 
             <div className='hamburger' onClick={toggleMenu}>
-                {isMobile ? <FaTimes /> : <FaBars />}
+                {isMobile ? <FaTimes /> : <FaBars className='close' />}
             </div>
         </div>
     );

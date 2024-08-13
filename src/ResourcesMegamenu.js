@@ -62,14 +62,20 @@ const ResourcesMegamenu = () => {
 
             <div className="menu-details">
                 <Slider {...settings} className="image-slider">
-                    <div>
+                    <div className='slide'>
                         <img src={Resurce1} alt="Slide 1" />
+                        <div className="overlay-text">Why LawKos is your ideal partner 
+                        for legal solutions and services?</div>
                     </div>
-                    <div>
+                    <div className='slide'>
                         <img src={Resurce2} alt="Slide 2" />
+                        <div className="overlay-text">LawKos - 15 years of legal e
+                        xcellence</div>
                     </div>
-                    <div>
+                    <div className='slide'>
                         <img src={Resurce2} alt="Slide 3" />
+                        <div className="overlay-text">Why LawKos is your ideal partner 
+                        for legal solutions and services?</div>
                     </div>
                 </Slider>
             </div>
