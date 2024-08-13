@@ -62,7 +62,7 @@
             font-size: 16px;
             width: 80%;
             font-weight: 400;
-            color: #666;
+            color: var(--p-color);
             line-height: 1.6;
         }
     }
@@ -74,9 +74,9 @@
         border-radius: 50%;
         height: 100px;
         width: 100px;
-        border: 2px soldi #000;
+        border: 2px solid var(--body-color);
         background-color: transparent;
-        color: #000;
+        color: var(--body-color);
         text-decoration: none;
 
         span {

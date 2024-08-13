@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
         
         <div className="footer__bottom">
-          <p>© 2023 LAWKOS. All rights reserved.</p>
+          <p>© 2024 LAWKOS. All rights reserved.</p>
           <div className="footer__bottom-links">
             <Link href="#">Privacy</Link>
             <span>|</span>
