@@ -5,6 +5,7 @@ import { NavData } from './components/NavData';
 const ProductsMegamenu = () => {
   return (
     <div className='nav-megamenu'>
+      <div className='menu-content3'>
       <div className='menu-content2'>
       {NavData.map((item) => (
         <div className='menu-link' key={item.title}>
@@ -14,6 +15,7 @@ const ProductsMegamenu = () => {
           </Link>
         </div>
       ))}
+      </div>
       </div>
       <div className="menu-details">
         <div className="personal">

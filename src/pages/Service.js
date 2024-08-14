@@ -1,6 +1,7 @@
 import React from 'react';
 import './Service.scss';
-import statueImage from '../img/thinker.png'; // Replace with the correct image path
+import statueImage from '../img/thinker.png';
+
 
 const Service = () => {
   return (

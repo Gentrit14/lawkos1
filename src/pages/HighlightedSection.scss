@@ -26,11 +26,11 @@
         margin-right: 20px;
         margin-bottom: 15em;
         margin-left: 2em;
-        width: 50%;
+        width: 70%;
         color: #0a0a0a;
 
         h2 {
-            font-size: 28px;
+            font-size: 34px;
             font-weight: 400;
             width: 40%;
             line-height: 1.5;
@@ -46,7 +46,7 @@
         padding: 10px;
 
         .logo {
-            width: 80px;
+            width: 100px;
             height: auto;
         }
     }
@@ -60,12 +60,16 @@
         width: 100%;
 
         .text-container {
-            margin: 2px 50px 2px -100px;
+            width: 100%;
+            max-width: 100%;
+            border: 2px solid #000;
+            margin: 2px 0px 2px 0px;
             text-align: left;
+            z-index: 111;
             h2 {
                 font-size: 25px;
                 font-weight: 400;
-                width: 100%;
+                width: 65%;
             }
         }
 

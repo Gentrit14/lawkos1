@@ -1,7 +1,8 @@
 import React from 'react';
 import './PracticeAreas.scss';
 import { practiceAreasData } from './practiceAreasData';
-import { HiArrowRight } from "react-icons/hi2";
+import Button1 from '../img/button1.png';
+
 
 const PracticeAreas = () => {
     return (
@@ -9,7 +10,7 @@ const PracticeAreas = () => {
             <div className="container">
                 <div className="container2">
                 <h2>Our practice area</h2>
-                <button className='view-all-areas'>View All Areas <HiArrowRight /></button>
+                <img src={Button1} className='view-all-areas' />
                 </div>
                 <div className="practice-area-grid">
                     {practiceAreasData.map((area, index) => (

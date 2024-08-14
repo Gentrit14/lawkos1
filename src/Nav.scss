@@ -4,13 +4,21 @@
 .nav {
     background-color: var(--body_background);
     padding: 15px 5%;
+    // border: 2px solid #fff;
     display: flex;
     font-family: "Roboto", sans-serif;
     height: 60px;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    left: 0;       
+    right: 0;       
     color: var(--body-color);
+    width: 100%;
+    z-index: 1111;
+    max-width: 1300px;  /* Set a max-width to control the size */
+
 
     .title {
         color: var(--body-color);
@@ -153,17 +161,32 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 1000;
 
-        .menu-content2 {
-            display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        .menu-content3 {
+            display: flex;
             justify-content: center;
             align-items: center;
-            
-            flex-grow: 0.4;
+            border: 2px solid #ad0000;
             width: 100%;
-            max-width: 70%;
             height: 100%;
             margin-top: auto;
+            
+            
+            
+        }
+
+        .menu-content2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #fff;
+            flex-grow: 0.4;
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            margin-top: auto;
+            flex-wrap: wrap;
             
             
             
@@ -177,10 +200,11 @@
         
 
         .menu-link {
-            width: 100%;
+            width: 50%;
             margin: 20px;
             height: auto;
             align-items: center;
+            justify-content: center;
             margin-bottom: 0px;
             border-radius: 10px;
             transition: all 0.3s ease;
@@ -555,6 +579,9 @@
     
             .hamburger {
                 display: block;
+               
+                padding-right: 10%;
+
             }
 
             .nav-megamenu.resources{
@@ -667,5 +694,4 @@
                 }
             }
         }
-
 
