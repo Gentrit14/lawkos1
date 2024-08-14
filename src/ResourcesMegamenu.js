@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiGlobe, FiFileText, FiBook, FiPieChart, FiMic } from "react-icons/fi";
+import { GrContact } from "react-icons/gr";
 import Resurce1 from './img/resurce1.png';
 import Resurce2 from './img/resurce2.png';
 import "slick-carousel/slick/slick.css";
@@ -20,8 +21,9 @@ const ResourcesMegamenu = () => {
     };
 
     return (
-        <div className='nav-megamenu resources'>
-            <div className='menu-content'>             
+        <div className='nav-megamenu resources'> 
+            <div className='menu-content'>
+                           
                 <div className='menu-link'>
                     <Link to='/network'>
                         <div className='icon'><FiGlobe /></div>
@@ -54,8 +56,8 @@ const ResourcesMegamenu = () => {
                 </div>
                 <div className='menu-link'>
                     <Link to='/podcast'>
-                        <div className='icon'><FiMic /></div>
-                        <h6>Podcast</h6>
+                        <div className='icon'><GrContact /></div>
+                        <h6>Contact</h6>
                     </Link>
                 </div>
             </div>

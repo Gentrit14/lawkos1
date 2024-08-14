@@ -6,6 +6,7 @@ const ProductsMegamenu = () => {
   return (
     <div className='nav-megamenu'>
       <div className='menu-content3'>
+        <h6 className='menu-h6'>Our practice area</h6>
       <div className='menu-content2'>
       {NavData.map((item) => (
         <div className='menu-link' key={item.title}>
