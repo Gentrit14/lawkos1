@@ -10,7 +10,8 @@ const PracticeAreas = () => {
             <div className="container">
                 <div className="container2">
                 <h2>Our practice area</h2>
-                <img src={Button1} className='view-all-areas' />
+                 
+                <img src={Button1} alt="Statue" />
                 </div>
                 <div className="practice-area-grid">
                     {practiceAreasData.map((area, index) => (
