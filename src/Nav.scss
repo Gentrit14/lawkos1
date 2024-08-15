@@ -22,7 +22,7 @@
 
 .nav {
     background-color: var(--body_background);
-    padding: 15px ;
+    padding: 0px;
     // border: 2px solid #fff;
     display: flex;
     font-family: "Roboto", sans-serif;
@@ -36,7 +36,7 @@
     color: var(--body-color);
     width: 100%;
     z-index: 1111;
-    max-width: 1300px;  /* Set a max-width to control the size */
+    max-width: 1300px;
 
 
     .title {
@@ -77,6 +77,7 @@
                 display: flex;
                 
             }
+           
             .nav-megamenu.resources{
                 display: flex;
             }
@@ -91,6 +92,9 @@
         }
     }
 
+    .mobile-megamenu{
+        display: none;
+    }
 
     
 
@@ -113,7 +117,7 @@
         font-size: 20px;
         color: #a87f4d;
         fill: #a87f4d;
-        top: 27px;
+        top: 20px;
         right: 9px;
         display: none;
     }
@@ -234,7 +238,8 @@
         }
         
         .menu-content2 .menu-link:hover {
-            background-color: #333333; /* Darker hover effect */
+            background-color: #33333342; /* Darker hover effect */
+            color: #fff;
             transform: scale(1.05);
         }
         
@@ -358,11 +363,11 @@
             margin: 0; /* Remove any unnecessary margin */
             
             .nav-link {
-                padding: 5px 10px; /* Adjust padding to maintain spacing */
+                padding: 5px 5px; /* Adjust padding to maintain spacing */
             }
             
             .inner-link {
-                font-size: 18px; /* Adapt font size */
+                font-size: 16px; /* Adapt font size */
             }
         }
     
@@ -390,7 +395,7 @@
     
         .arrow1 {
             font-size: 18px;
-            top: 35px;
+            top: 25px;
         }
     }
     
@@ -578,6 +583,12 @@
                 padding: 10px;
                 border-bottom: 1px solid #8f8f8f;
                 width: 90%;
+                &:hover{
+                    .arrow1{
+                        display: none;
+                    }
+                }
+
             }
     
             .auth {
@@ -587,8 +598,14 @@
         }
 
         
+
+        
     
         .arrow2 {
+            display: none;
+        }
+
+        .arrow1 {
             display: none;
         }
     

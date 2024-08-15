@@ -7,7 +7,8 @@ import { LuPhoneCall } from "react-icons/lu";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { LuRectangleVertical } from "react-icons/lu";
 import { RiArrowDropDownLine } from "react-icons/ri";
-
+import ProductsMegamenu from './ProductsMegamenu';
+import ResourcesMegamenu from './ResourcesMegamenu';
 
 const Nav = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -17,11 +18,7 @@ const Nav = () => {
     // Detect screen size
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 1000) {
-                setIsMobile(true);
-            } else {
-                setIsMobile(false);
-            }
+            setIsMobile(window.innerWidth <= 1000);
         };
 
         handleResize();
@@ -82,7 +79,8 @@ const Nav = () => {
                             <MdKeyboardArrowDown className='arrow2' />
                             <RiArrowDropDownLine className='arrow3' />
                         </div>
-                        {showProductsMenu && (
+                        {!isMobile && showProductsMenu && <ProductsMegamenu />}
+                        {isMobile && showProductsMenu && (
                             <div className='mobile-megamenu'>
                                 <div className='nav-link'>
                                     <Link to='/' className='inner-link'>Corporate Law</Link>
@@ -136,21 +134,28 @@ const Nav = () => {
                             <MdKeyboardArrowDown className='arrow2' />
                             <RiArrowDropDownLine className='arrow3' />
                         </div>
-                        {showResourcesMenu && (
+                        {!isMobile && showResourcesMenu && <ResourcesMegamenu />}
+                        {isMobile && showResourcesMenu && (
                             <div className='mobile-megamenu'>
                                 <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Articles</Link>
+                                    <Link to='/' className='inner-link'>Network</Link>
                                 </div>
                                 <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Case Studies</Link>
+                                    <Link to='/' className='inner-link'>Legal Notice</Link>
                                 </div>
                                 <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Webinars</Link>
+                                    <Link to='/' className='inner-link'>Laws of Kosovo</Link>
                                 </div>
                                 <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Whitepapers</Link>
+                                    <Link to='/' className='inner-link'>Insights</Link>
                                 </div>
-                                {/* Add more resource links as needed */}
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Podcast</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Contact</Link>
+                                </div>
+                                
                             </div>
                         )}
                     </div>
