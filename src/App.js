@@ -14,11 +14,11 @@ const App = () => {
   return (
     <Router>
     <Nav />
-    {/* <Home />
+    <Home />
     <Service />
     <About />
     <PracticeAreas />
-    <Highlight /> */}
+    <Highlight />
     <Footer />
     </Router>
   );
