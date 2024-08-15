@@ -17,7 +17,7 @@
     color: var(--body-color);
     width: 100%;
     z-index: 1111;
-    max-width: 1400px;  /* Set a max-width to control the size */
+    max-width: 100%;  /* Set a max-width to control the size */
 }
 
 .nav {
@@ -90,6 +90,9 @@
             }
         }
     }
+
+
+    
 
     .inner-link {
         font-size: 17px;
@@ -549,181 +552,178 @@
 
 
     @media (max-width: 1000px) {
-            .links {
-                display: none;
-                flex-direction: column;
-                position: fixed;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: var(--body_background);
-                align-items: center;
+        .links {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--body_background);
+            z-index: 1;
+    
+            .inner-link {
                 text-align: center;
-                z-index: 1;
-
-                .inner-link{
-                    text-align: center;
-                    
-                }
-    
-                &.open {
-                    display: block;
-                }
-    
-                .nav-link {
-                    display: flex;
-                    justify-content: space-between; /* Aligns items on opposite sides */
-                    align-items: center;
-                    margin: 10px;
-                    padding: 10px;
-                    border-bottom: 1px solid #8f8f8f;
-                    width: 90%;
-                }
-    
-                .auth {
-                    margin-top: 10px;
-                    text-align: center;
-                }
             }
-
-            .arrow2{
-                display: none;
+    
+            &.open {
+                display: block;
             }
-
-            .arrow3{
-                margin-left: auto;
-                display: flex;
-                font-size: 25px;
+    
+            .nav-link {
+                display: block;
+                position: relative;
+                margin: 10px;
+                padding: 10px;
+                border-bottom: 1px solid #8f8f8f;
+                width: 90%;
             }
-
-            
-            
     
             .auth {
-                display: block;
-    
-                .number {
-                    align-items: center;
-                    justify-content: center;
-                }
+                margin-top: 10px;
+                text-align: center;
             }
+        }
+
+        
     
-            .hamburger {
-                display: block;
-               
-                padding-right: 10%;
-
+        .arrow2 {
+            display: none;
+        }
+    
+        .arrow3 {
+            margin-left: auto;
+            display: flex;
+            font-size: 25px;
+        }
+    
+        .auth {
+            display: block;
+    
+            .number {
+                align-items: center;
+                justify-content: center;
             }
-
-            .nav-megamenu.resources{
-                flex-direction: column;
-                height: auto;
-                max-height: 70vh;
+        }
+    
+        .hamburger {
+            display: block;
+            padding-right: 10%;
+        }
+        .mobile-megamenu{
+            display: block;
+        }
+    
+        .nav-megamenu.resources {
+            flex-direction: column;
+            height: auto;
+            display: none;
+            max-height: 70vh;
+            width: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 0px;
+            top: 230px;
+            left: 0;
+    
+            .menu-link {
                 width: 100%;
-                overflow-y: auto;
-                overflow-x: hidden;
-                padding: 0px;
-                top: 230px;
-                left: 0;
-
-                .menu-link {
-                    width: 100%;
-                    margin: 0;
-                    padding: 10px;
-                    align-items: flex-start;
+                margin: 0;
+                padding: 10px;
+                align-items: flex-start;
+                border-bottom: 1px solid #a87f4d;
+    
+                &:hover {
                     border-bottom: 1px solid #a87f4d;
-    
-                    &:hover {
-                        border-bottom: 1px solid #a87f4d;
-                    }
-    
-                    a {
-                        flex-direction: row;
-                        justify-content: flex-start;
-    
-                        .icon {
-                            margin-right: 10px;
-                            margin-bottom: 0;
-                        }
-    
-                        h6 {
-                            font-size: 14px;
-                            margin-right: 0;
-                            padding-top: 0;
-                            margin-top: 0;
-                        }
-                    }
-
                 }
-
-                .menu-details{
-                    display: none;
+    
+                a {
+                    flex-direction: row;
+                    justify-content: flex-start;
+    
+                    .icon {
+                        margin-right: 10px;
+                        margin-bottom: 0;
+                    }
+    
+                    h6 {
+                        font-size: 14px;
+                        margin-right: 0;
+                        padding-top: 0;
+                        margin-top: 0;
+                    }
                 }
             }
     
-            .nav-megamenu {
-                flex-direction: column;
-                height: auto;
-                max-height: 70vh;
+            .menu-details {
+                display: none;
+            }
+        }
+    
+        .nav-megamenu {
+            flex-direction: column;
+            display: block;
+            width: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 0px;
+            top: 182px;
+
+            .menu-content3{
+                display: block;
+            }
+    
+            .menu-content2 {
+                display: block;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                flex-grow: 0.4;
                 width: 100%;
-                overflow-y: auto;
-                overflow-x: hidden;
-                padding: 0px;
-                top: 182px;
-
-                .menu-content2 {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-                    justify-content: center;
-                    align-items: center;
-                    flex-grow: 0.4;
-                    width: 100%;
-                    max-width: 100%;
-                    height: 100%;
-                }
+                max-width: 100%;
+                height: 100%;
+            }
     
-                .menu-link {
-                    width: 100%;
-                    margin: 0;
-                    padding: 10px;
-                    align-items: flex-start;
+            .menu-link {
+                width: 100%;
+                margin: 0;
+                padding: 10px;
+                align-items: flex-start;
+                border-bottom: 1px solid #a87f4d;
+    
+                &:hover {
                     border-bottom: 1px solid #a87f4d;
+                }
     
-                    &:hover {
-                        border-bottom: 1px solid #a87f4d;
+                a {
+                    flex-direction: row;
+                    justify-content: flex-start;
+    
+                    .icon {
+                        margin-right: 10px;
+                        margin-bottom: 0;
                     }
     
-                    a {
-                        flex-direction: row;
-                        justify-content: flex-start;
-    
-                        .icon {
-                            margin-right: 10px;
-                            margin-bottom: 0;
-                        }
-    
-                        h6 {
-                            font-size: 14px;
-                            margin-right: 0;
-                            padding-top: 0;
-                            margin-top: 0;
-                        }
+                    h6 {
+                        font-size: 14px;
+                        margin-right: 0;
+                        padding-top: 0;
+                        margin-top: 0;
                     }
                 }
-
             }
+        }
     
-                
+        .menu-details {
+            width: 100%;
+            display: none;
+        }
     
-                .menu-details {
-                    width: 100%;
-                    display: none;
-                }
+        .personal, .business {
+            display: none;
+        }
+    }
     
-                .personal, .business {
-                    display: none;
-                }
-            }
         }
 
