@@ -4,6 +4,7 @@ import './Nav.scss';
 import { GoLaw } from "react-icons/go";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { LuPhoneCall } from "react-icons/lu";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { LuRectangleVertical } from "react-icons/lu";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import ProductsMegamenu from './ProductsMegamenu';
@@ -83,6 +84,46 @@ const Nav = () => {
                             <RiArrowDropDownLine className='arrow3' />
                         </div>
                         {!isMobile && showProductsMenu && <ProductsMegamenu />}
+                        {isMobile && showProductsMenu && (
+                            <div className='mobile-megamenu'>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Corporate Law</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Real Estate</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Tax & Customs Laws</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Public Procurement</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Banking & Finance</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Insurance</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Energy & Infrastructure</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Family Law</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>ICT Sector</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Labor & Employment</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Intellectual Property Law</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Criminal Law</Link>
+                                </div>
+                            </div>
+                        )}
                     </div>
 
                     {/* Resources Megamenu */}
@@ -98,6 +139,29 @@ const Nav = () => {
                             <RiArrowDropDownLine className='arrow3' />
                         </div>
                         {!isMobile && showResourcesMenu && <ResourcesMegamenu />}
+                        {isMobile && showResourcesMenu && (
+                            <div className='mobile-megamenu'>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Network</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Legal Notice</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Laws of Kosovo</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Insights</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Podcast</Link>
+                                </div>
+                                <div className='nav-link'>
+                                    <Link to='/' className='inner-link'>Contact</Link>
+                                </div>
+                                
+                            </div>
+                        )}
                     </div>
 
                     <div className='nav-link'>
@@ -121,7 +185,10 @@ const Nav = () => {
                     </div>
                 </div>
 
-                
+                {/* Mobile Hamburger Menu */}
+                <div className='hamburger' onClick={(e) =>{e.preventDefault(); toggleMenu();}}>
+                    {isMobile ? <FaTimes /> : <FaBars className='close' />}
+                </div>
                 <MobileNav />
             </div>
         

@@ -148,7 +148,6 @@
     color: var(--body-color);
     display: block;
     align-items: center;
-    margin-bottom: 25px;
     white-space: nowrap;
 
     .number-detail {
@@ -175,13 +174,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin:15px 0;
+    margin: 0;
 
 
     .contact {
         background-color: var(--button-background);
         border-radius: 70px;
-        margin-left: 20px;
+        margin-top: -20px;
         font-size: 16px;
         color: #fff;
         padding: 10px 30px;
