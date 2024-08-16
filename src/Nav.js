@@ -60,6 +60,8 @@ const Nav = () => {
 
     
 
+    
+
     return (
         
             <div className={color ? 'nav nav__sticky' : 'nav'}>
