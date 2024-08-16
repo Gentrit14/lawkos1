@@ -76,7 +76,9 @@
         display: none;
     }
 
-    
+    .mobile-nav{
+        display: none;
+    }
 
     .inner-link {
         font-size: 17px;
@@ -232,6 +234,8 @@
 
         
 
+        
+
         .menu-link {
             width: 50%;
             margin: 20px;
@@ -334,6 +338,13 @@
         
     }
 
+    
+
+    .nav__sticky {
+        background-color: #000 !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    }
+
     @media (min-width: 1001px) and (max-width: 1445px) {
         .nav {
             height: 70px; /* Set a consistent height */
@@ -423,7 +434,8 @@
         
     
             &:hover {
-                background-color: #333333; /* Darker hover effect */
+                background-color: #33333342; /* Darker hover effect */
+                color: #fff;
                 transform: scale(1.05);
             }
     
@@ -514,13 +526,9 @@
         cursor: pointer;
     }
 
-    .nav .nav-link .nav-megamenu {
-        display: none; /* Hide by default */
-    }
-    
-    .nav .nav-link.open .nav-megamenu {
-        display: block; /* Show when open */
-    }
+
+
+
 
     @media (max-width: 1445px){
         // .menu-content2 {
@@ -540,207 +548,17 @@
     }
 
    
-    @media (max-width: 1000px) {
+    @media(max-width:1020px){
+        .nav{
+            padding:0;
+            display: none; 
+        }
+        .links, .nav-link, .inner-link, .auth , .nav-megamenu, .nav-megamenu.resources, .title{
+            display: none;
+        }
         
-        .links {
-            display: none;
-            flex-direction: column;
-            position: fixed;
-            top: 70px;
-            left: 0;
-            width: 70%;
-            height: 100%;
-            background-color: var(--body_background);
-            z-index:2200;
-            overflow-y: auto;
-            min-height: 100vh;
-            height: 100%;
-    
-            .inner-link {
-                text-align: center;
-            }
-
-            
-    
-            &.open {
-                display: block;
-            }
-    
-            .nav-link {
-                display: block;
-                position: relative;
-                margin: 0px;
-                padding: 10px;
-                border-bottom: 1px solid #8f8f8f;
-                width: 95%;
-                &:hover{
-                    .arrow1{
-                        display: none;
-                    }
-                }
-
-            }
-    
-            .auth {
-                margin-top: 10px;
-                text-align: center;
-            }
-        }
-
-        
-
-        
-    
-        .arrow2 {
-            display: none;
-        }
-
-        .arrow1 {
-            display: none;
-        }
-    
-        .arrow3 {
-            margin-left: auto;
-            display: flex;
-            font-size: 25px;
-        }
-    
-        .auth {
+        .mobile-nav{
             display: block;
-    
-            .number {
-                align-items: center;
-                justify-content: center;
-            }
-        }
-
-        .open1{
-            margin-right: 20%;
-        }
-    
-        .hamburger {
-            display: block;
-            position: relative;
-            padding-right: 35%;
-            
-        }
-        .close{
-            position: absolute;
-            right: 20%; /* Adjust this value to move the icon more to the left */
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
-        .mobile-megamenu{
-            display: block;
-        }
-    
-        .nav-megamenu.resources {
-            flex-direction: column;
-            height: auto;
-            display: none;
-            max-height: 70vh;
-            width: 100%;
-            overflow-y: auto;
-            overflow-x: hidden;
-            padding: 0px;
-            top: 230px;
-            left: 0;
-    
-            .menu-link {
-                width: 100%;
-                margin: 0;
-                padding: 10px;
-                align-items: flex-start;
-                border-bottom: 1px solid #a87f4d;
-    
-                &:hover {
-                    border-bottom: 1px solid #a87f4d;
-                }
-    
-                a {
-                    flex-direction: row;
-                    justify-content: flex-start;
-    
-                    .icon {
-                        margin-right: 10px;
-                        margin-bottom: 0;
-                    }
-    
-                    h6 {
-                        font-size: 14px;
-                        margin-right: 0;
-                        padding-top: 0;
-                        margin-top: 0;
-                    }
-                }
-            }
-    
-            .menu-details {
-                display: none;
-            }
-        }
-    
-        .nav-megamenu {
-            flex-direction: column;
-            display: block;
-            width: 100%;
-            overflow-y: auto;
-            overflow-x: hidden;
-            padding: 0px;
-            top: 182px;
-
-            .menu-content3{
-                display: block;
-            }
-    
-            .menu-content2 {
-                display: block;
-                position: relative;
-                justify-content: center;
-                align-items: center;
-                flex-grow: 0.4;
-                width: 100%;
-                max-width: 100%;
-                height: 100%;
-            }
-    
-            .menu-link {
-                width: 100%;
-                margin: 0;
-                padding: 10px;
-                align-items: flex-start;
-                border-bottom: 1px solid #a87f4d;
-    
-                &:hover {
-                    border-bottom: 1px solid #a87f4d;
-                }
-    
-                a {
-                    flex-direction: row;
-                    justify-content: flex-start;
-    
-                    .icon {
-                        margin-right: 10px;
-                        margin-bottom: 0;
-                    }
-    
-                    h6 {
-                        font-size: 14px;
-                        margin-right: 0;
-                        padding-top: 0;
-                        margin-top: 0;
-                    }
-                }
-            }
-        }
-    
-        .menu-details {
-            width: 100%;
-            display: none;
-        }
-    
-        .personal, .business {
-            display: none;
         }
     }
     
