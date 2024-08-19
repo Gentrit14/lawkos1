@@ -1,1 +1,1 @@
-// export const CHOOSE_LANGUAGE = 'CHOOSE_LANGUAGE';
+export const CHOOSE_LANGUAGE = 'CHOOSE_LANGUAGE';

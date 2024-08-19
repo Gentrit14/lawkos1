@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 import footerLinks from './footerLinks';
 import { GoLaw } from "react-icons/go";
 import { LuPhoneCall } from "react-icons/lu";
-import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram, FaGlobe } from "react-icons/fa"; // Importing icons
+import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram} from "react-icons/fa"; // Importing icons
 import DarkMode from '../components/DarkMode';
+import SelectLanguage from '../components/shared/SelectLanguage/SelectLanguage';
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div className="footer1">
       <footer className="footer">
@@ -67,10 +68,10 @@ const Footer = () => {
           <DarkMode />
           <div className="footer__language">
             
-            <div className="footer__language-options">
-              <FaGlobe />
-              <span>English</span>
-            </div>
+          <SelectLanguage
+                    setLanguage={props.setLanguage}
+                    language={props.language}
+                />
           </div>
         </div>
       </footer>
