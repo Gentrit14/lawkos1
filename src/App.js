@@ -12,6 +12,7 @@ import Footer from './pages/Footer';
 
 const App = () => {
   return (
+    
     <Router>
     <Nav />
     <Home />
@@ -21,6 +22,7 @@ const App = () => {
     <Highlight />
     <Footer />
     </Router>
+    
   );
 }
 
