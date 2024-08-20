@@ -1,6 +1,5 @@
 import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
-import { useEffect } from 'react';
 import './App.scss';
 import Nav from './Nav';
 import Home from './pages/Home';  
