@@ -54,8 +54,8 @@
     border-top-right-radius: 7px;
   }
   .select-language:hover {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    // border-top-left-radius: 0;
+    // border-top-right-radius: 0;
     border-top: 1px solid transparent;
   }
   .select-language:hover .dropdown {
@@ -82,12 +82,12 @@
 
   @media(max-width:1475px){
     .select-language {
-      padding: 6px;
+      padding: 10px;
       border-radius: 30px;
-      width: 145px;
+      width: 115px;
     }
     .select-language .arrow {
-      margin-left: 7.5px;
+      margin-left: 5.5px;
     }
     .select-language .single-language {
       padding: 2.5px 5px 3px;
@@ -104,7 +104,9 @@
     }
     .select-language img {
       margin-right: 10px;
-      width: 30px;
+      border-radius: 20px;
+      width: 25px;
+      height: 17px;
     }
   }
 
