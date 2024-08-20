@@ -10,25 +10,18 @@
     justify-content: space-between;
     align-items: center;
     padding:15px 5% 10px;
-    .mobile-logo-row a{
-        display: flex;
-        align-items: center;
-        .title {
-            color: var(--body-color);
-            text-decoration: none;
-            font-size: 25px;
-            font-family: "Libre Baskerville", serif;
-            font-weight: bold;
+        .nav-logo2{
             display: flex;
             align-items: center;
-            margin-left: 10px;
-    
-            svg {
-                font-size: 40px;
-                margin-right: 7px;
-                margin-top: -5px;
+            margin-left: max(15px, 1.25vw);
+            .logo-container2{
+                content: url('../../../img/logo1.svg');
+                height: max(40px, 1.8vw);
             }
-        }
+        
+        display: flex;
+        align-items: center;
+        
     }
     button{
         border:0;
@@ -66,7 +59,7 @@
         }
     }
     button{
-        color:#000000 !important;
+        color:var(--body-color) !important;
     }
 }
 body.dark-mode{
@@ -92,4 +85,8 @@ body.dark-mode{
         }
         button{ color:#fff !important; }
     }
+}
+
+[data-theme="dark"] .nav-logo2 .logo-container2 {
+    content: url('../../../img/logo2.svg');
 }

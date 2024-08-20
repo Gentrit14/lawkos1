@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import clsx from "clsx";
 import { Link } from 'react-router-dom';
-import { GoLaw } from "react-icons/go";
 import { AiOutlineMenu } from 'react-icons/ai';
 import './Toolbar.scss';
 
@@ -20,9 +19,10 @@ const Toolbar = (props) => {
 
     return (
         <div className={clsx("mobile-toolbar", isSticky2 ? "toolbar__sticky" : "")}>
-            <div className='mobile-logo-row'>
-                <Link to='/' className='title'><GoLaw />LAWKOS</Link>
-            </div>
+            <Link to='/' className='nav-logo2'>
+                    <div className='logo-container2'></div>
+                </Link>
+
             <button onClick={props.drawerClickHandler}><AiOutlineMenu /></button>
         </div>
     );

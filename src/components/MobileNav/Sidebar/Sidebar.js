@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import { GoLaw } from "react-icons/go";
 import { CgClose } from 'react-icons/cg'
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { LuPhoneCall } from "react-icons/lu";
@@ -20,7 +19,10 @@ const Sidebar = (props) => {
     <div className='mobile-sidebar'>
     <div className='mobile-sidebar-links'>
         <div className='sidebar-logo-row'>
-        <Link to='/' className='title'><GoLaw />LAWKOS</Link>
+        <Link to='/' className='nav-logo'>
+                    <div className='logo-container'></div>
+                </Link>
+
                 <button onClick={props.click}><CgClose/> </button>
             </div>
 

@@ -18,22 +18,16 @@
     color: var(--body-color);
 
 
-    .title {
-        color: var(--body-color);
-        text-decoration: none;
-        font-size: 25px;
-        font-family: "Libre Baskerville", serif;
-        font-weight: bold;
+    .nav-logo{
         display: flex;
         align-items: center;
         margin-left: max(15px, 1.25vw);
-
-        svg {
-            font-size: 40px;
-            margin-right: 7px;
-            margin-top: -5px;
+        .logo-container{
+            content: url('./img/logo1.svg');
+            height: max(40px, 1.8vw);
         }
     }
+
 
     .links {
         display: flex;
@@ -581,9 +575,10 @@
             padding:0;
             display: none; 
         }
-        .links, .nav-link, .inner-link, .auth , .nav-megamenu, .nav-megamenu.resources, .title{
+        .links, .nav-link, .inner-link, .auth , .nav-megamenu, .nav-megamenu.resources, .nav-logo{
             display: none;
         }
+
         
         .mobile-nav{
             display: block;
@@ -592,3 +587,8 @@
     
         }
 
+
+        [data-theme="dark"] .nav-logo .logo-container {
+            content: url('./img/logo2.svg');
+        }
+        
