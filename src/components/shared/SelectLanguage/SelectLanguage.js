@@ -16,7 +16,7 @@ import china from '../../../assets/flags/china.svg';
 import japan from '../../../assets/flags/japan.svg';
 
 import { useDispatch , useSelector } from 'react-redux';
-import { chooseLanguage } from '../../../store/actions/languageactions';
+import { chooseLanguage } from '../../../store/actions/languageActions';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
 const SelectLanguage = () => {
