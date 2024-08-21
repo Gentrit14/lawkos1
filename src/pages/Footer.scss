@@ -100,7 +100,7 @@
         }
 
         @media (max-width: 1000px) {
-            width: 90%;
+            width: 100%;
             align-items: center;
             justify-content: center;
         }
@@ -243,7 +243,7 @@
       padding: 20px 0px;
 
       &-section {
-        margin-left: 14%;
+        margin-left: 13%;
         h4 {
           margin-bottom: 10px;
           color: #b3b3b3;
@@ -269,6 +269,7 @@
 
         @media (max-width: 1000px) {
             margin-left: 0;
+            margin-left: 20%;
             text-align: center;
             align-items: center;
             justify-content: center;
@@ -286,6 +287,10 @@
           flex-direction: column;
           align-items: center;
       }
+
+      @media (max-width: 1090px) {
+        margin-left: -20%;
+    }
     }
 
     &__bottom {
