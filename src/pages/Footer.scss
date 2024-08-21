@@ -12,6 +12,7 @@
     max-width: 1300px;
     margin: 0 auto;
     overflow-x: hidden;
+    
 
     &__top {
       display: flex;
@@ -22,7 +23,8 @@
 
       @media (max-width: 1000px) {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
       }
     }
 
@@ -31,6 +33,11 @@
       flex-direction: column;
       justify-content: left;
       padding-bottom: 20px;
+      @media (max-width: 1000px) {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
     }
 
     .title {
@@ -62,8 +69,9 @@
 
         @media (max-width: 1000px) {
             flex-direction: column;
-            width: 68%;
-            margin-right: 0;
+            width: 60%;
+            border: 1px solid #fff;
+            margin-right: 0px;
         }
     }
 
@@ -99,7 +107,9 @@
         }
 
         @media (max-width: 1000px) {
-            width: 100%;
+            width: 90%;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -219,7 +229,10 @@
 
         @media (max-width: 1000px) {
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
+            margin: 0;
+            justify-content: center;
+            border: 2px solid #fff;
         }
     }
 
@@ -259,13 +272,23 @@
 
         @media (max-width: 1000px) {
             margin-left: 0;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
             width: 100%;
+        }
+        ul{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
         }
       }
 
       @media (max-width: 1000px) {
           flex-direction: column;
-          align-items: flex-start;
+          align-items: center;
       }
     }
 
@@ -292,9 +315,7 @@
           }
         }
 
-        @media (max-width: 1000px) {
-            margin-bottom: 10px;
-        }
+       
       }
 
       &__language {
@@ -316,4 +337,19 @@
           align-items: flex-start;
       }
     }
+}
+
+@media (max-width: 1000px) {
+  .footer__bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    .footer__bottom-links{
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
 }
