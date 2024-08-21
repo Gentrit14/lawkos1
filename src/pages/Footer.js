@@ -2,7 +2,6 @@ import React from 'react';
 import './Footer.scss';
 import { Link } from 'react-router-dom';
 import footerLinks from './footerLinks';
-import { GoLaw } from "react-icons/go";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram} from "react-icons/fa"; // Importing icons
 import DarkMode from '../components/DarkMode';
@@ -15,7 +14,9 @@ const Footer = (props) => {
         <div className="footer__top">
           <div className="footer__top2">
             <div className="footer__logo">
-              <Link to='/' className='title'><GoLaw />LAWKOS</Link>
+            <Link to='/' className='nav-logo'>
+                    <div className='logo-container'></div>
+                </Link>
               <h4>LEGAL EXCELLENCE</h4>
             </div>
             <div className="footer__newsletter">

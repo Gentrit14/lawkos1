@@ -3,17 +3,17 @@ import './SelectLanguage.scss';
 import SingleLanguage from './SingleLanguage';
 import { dataLocalStorage } from './dataLocalStorage';
 
-import england from '../../../assets/flags/england.svg';
-import albania from '../../../assets/flags/albania.svg';
-import german from '../../../assets/flags/german.svg';
-import france from '../../../assets/flags/france.svg';
-import italy from '../../../assets/flags/italy.svg';
-import spain from '../../../assets/flags/spain.svg';
-import turkey from '../../../assets/flags/turkey.svg';
-import portugal from '../../../assets/flags/portugal.svg';
-import russia from '../../../assets/flags/russia.svg';
-import china from '../../../assets/flags/china.svg';
-import japan from '../../../assets/flags/japan.svg';
+import england from '../../../assets/flags/gb.svg';
+import albania from '../../../assets/flags/al.svg';
+import german from '../../../assets/flags/de.svg';
+import france from '../../../assets/flags/fr.svg';
+import italy from '../../../assets/flags/it.svg';
+import spain from '../../../assets/flags/es.svg';
+import turkey from '../../../assets/flags/tr.svg';
+import portugal from '../../../assets/flags/pt.svg';
+import russia from '../../../assets/flags/ru.svg';
+import china from '../../../assets/flags/cn.svg';
+import japan from '../../../assets/flags/jp.svg';
 
 import { useDispatch , useSelector } from 'react-redux';
 import { chooseLanguage } from '../../../store/actions/languageActions';
