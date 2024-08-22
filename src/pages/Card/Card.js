@@ -5,7 +5,7 @@ import Card2 from '../../img/card2.png';
 import Card3 from '../../img/card3.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './Card.scss';tybe e
+import './Card.scss';
 
 // const teamMembers = [
 //     {
