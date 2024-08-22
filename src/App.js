@@ -8,6 +8,8 @@ import Service from './pages/Service';
 import PracticeAreas from './pages/PracticeAreas';
 import Highlight from './pages/HighlightedSection';
 import Footer from './pages/Footer';
+import Card from './pages/Card/Card'
+
 
 
 const App = () => {
@@ -20,6 +22,7 @@ const App = () => {
     <About />
     <PracticeAreas />
     <Highlight />
+    <Card />
     <Footer />
     </Router>
     
