@@ -11,7 +11,7 @@ const breakPoints = [
     { width:850, itemsToShow: 3 }
 ];
 
-const OurBlog = () => {
+const OurBlog = (props) => {
 
     const carouselRef = React.useRef(null);
     const onNextStart = (currentItem, nextItem) => {
