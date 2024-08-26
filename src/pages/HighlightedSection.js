@@ -6,6 +6,7 @@ const HighlightedSection = () => {
     return (
         <section className="highlighted-section">
             <div className="highlighted-content">
+                
                 <div className="text-container">
                     <h2>
                         From family law to personal injury, we treat your case with the care it deserves. 

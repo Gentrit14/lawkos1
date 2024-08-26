@@ -110,7 +110,7 @@
   }
 
   .seal {
-    display: flex;
+    display: none;
     justify-content: center;
     position: absolute;
     color: white;
@@ -132,7 +132,6 @@
 
      .home-content {
       padding-top: 10%;
-      border: 2px solid #fff;
       height: 70%;
       flex-direction: column;
       align-items: center;
@@ -171,7 +170,6 @@
       display: flex;
       flex-direction: column;
       height:2000px;
-      border: 2px solid #fff;
       align-items: center;
     .image-container {
       height: 500px;

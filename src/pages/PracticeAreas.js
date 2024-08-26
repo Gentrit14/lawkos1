@@ -1,7 +1,8 @@
 import React from 'react';
 import './PracticeAreas.scss';
 import { practiceAreasData } from './practiceAreasData';
-import Button1 from '../img/button1.png';
+import { Link } from 'react-router-dom';
+
 
 
 const PracticeAreas = () => {
@@ -11,7 +12,9 @@ const PracticeAreas = () => {
                 <div className="container2">
                 <h2>Our practice area</h2>
                  
-                <img src={Button1} alt="Statue" />
+                <Link to='/' className='button'>
+                    <div className='button1'></div>
+                </Link>
                 </div>
                 <div className="practice-area-grid">
                     {practiceAreasData.map((area, index) => (

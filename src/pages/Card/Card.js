@@ -27,9 +27,12 @@ const OurBlog = (props) => {
     };
 
     return(
+        <div className='component1'>
         <div className='our-blog-component'>
-            <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            </h1>
+                <div className="container2">
+                <h2>Our practice area</h2>
+                <h6>Meet the brilliant minds behind LawKos. Our team of skilled lawyers and legal experts  make LawKos your best choice for legal representation.</h6>
+                </div>
 
              <Carousel className="slider styled-arrows" 
                     breakPoints={breakPoints}
@@ -62,6 +65,7 @@ const OurBlog = (props) => {
 
             </Carousel>
 
+        </div>
         </div>
     )
 };

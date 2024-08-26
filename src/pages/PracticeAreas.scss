@@ -64,13 +64,33 @@
         }
     }
 
-    img {
-        display: inline-block;
-        width: 160px;
-        color: var(--body-color);
-        text-decoration: none;
+    .button{
+        display: flex;
         align-items: center;
-        cursor: pointer;
-        justify-content: center;
+        margin-top: 50px;
+        .button1{
+            content: url('../img/button1.png');
+            height: max(120px, 1.8vw);
+        }
     }
+
+    
+}
+@media (max-width: 666px){
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Vertically center the heading and button */
+        max-width: 1300px;
+        text-align: left;
+        margin: 0 auto;
+        .button{
+            display: flex;
+            margin-right: auto;
+        }
+    }
+}
+[data-theme="dark"] .button .button1 {
+    content: url('../img/button2.png');
 }
