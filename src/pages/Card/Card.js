@@ -11,6 +11,7 @@ const breakPoints = [
     { width:850, itemsToShow: 3 }
 ];
 
+
 const OurBlog = (props) => {
 
     const carouselRef = React.useRef(null);
@@ -31,13 +32,13 @@ const OurBlog = (props) => {
             </h1>
 
              <Carousel className="slider styled-arrows" 
-                breakPoints={breakPoints}
-                ref={carouselRef}
-                onPrevStart={onPrevStart}
-                onNextStart={onNextStart}
-                disableArrowsOnEnd={false}
+                    breakPoints={breakPoints}
+                    ref={carouselRef}
+                    onPrevStart={onPrevStart}
+                    onNextStart={onNextStart}
+                    disableArrowsOnEnd={false}
             >
-                    {Data1.map((props) => {
+                   {Data1.map((props) => {
                         return(
                             <div className="slider-item" data-aos='flip-left'>
                                 <div className="img-container">
@@ -50,9 +51,15 @@ const OurBlog = (props) => {
                                         <div className="circle"><LuPlus /></div>
                                     </Link>
                                 </div>
+                                <div className="hover-text">
+                                    <p>Labinot has been working with LawKos for over 10 
+                                    years. He has helped a lot of our clients achieve their
+                                    goals with their cases...</p>
+                                </div>
                             </div>
                         )
                     })}
+
             </Carousel>
 
         </div>
