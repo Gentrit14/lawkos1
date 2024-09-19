@@ -6,6 +6,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram} from "react-icons/fa"; // Importing icons
 import DarkMode from '../components/DarkMode';
 import SelectLanguage from '../components/shared/SelectLanguage/SelectLanguage';
+import { FormattedMessage } from 'react-intl'
 
 const Footer = (props) => {
   return (
@@ -17,13 +18,15 @@ const Footer = (props) => {
             <Link to='/' className='nav-logo'>
                     <div className='logo-container'></div>
                 </Link>
-              <h4>LEGAL EXCELLENCE</h4>
+              <h4>
+              <FormattedMessage id='footer-logo-title' defaultMessage='LEGAL EXCELLENCE' />
+                </h4>
             </div>
             <div className="footer__newsletter">
-              <p>Subscribe to our newsletter</p>
+              <p><FormattedMessage id='footer-news-title' defaultMessage='Subscribe to our newsletter' /></p>
               <div className="footer__newsletter-input">
                 <input type="text" placeholder="Enter your email" />
-                <button>Subscribe</button>
+                <button><FormattedMessage id='footer-button-title' defaultMessage='Subscribe' /></button>
               </div>
             </div>
             <div className='footer-content'>
@@ -31,11 +34,11 @@ const Footer = (props) => {
                 <LuPhoneCall />
                 <div className='number-detail'>
                     <h6>+383 123 456 789</h6>
-                    <p>Call our office</p>
+                    <p><FormattedMessage id="number-text" defaultMessage='Call our office'/></p>
                 </div>
             </div>
             <div className="footer__social">
-              <p>CONNECT WITH US:</p>
+              <p><FormattedMessage id="footer-social-text" defaultMessage='CONNECT WITH US:'/></p>
               <div className="footer__social-icons">
                 <FaLinkedin />
                 <FaTwitter />
@@ -60,11 +63,11 @@ const Footer = (props) => {
         </div>
         
         <div className="footer__bottom">
-          <p>© 2024 LAWKOS. All rights reserved.</p>
+          <p><FormattedMessage id="footer-bootom-text1" defaultMessage='© 2024 LAWKOS. All rights reserved.'/></p>
           <div className="footer__bottom-links">
-            <Link href="#">Privacy</Link>
+            <Link href="#"><FormattedMessage id="footer-bootom-text2" defaultMessage='Privacy'/></Link>
             <span>|</span>
-            <Link href="#">Cookies</Link>
+            <Link href="#"><FormattedMessage id="footer-bootom-text3" defaultMessage='Cookies'/></Link>
           </div>
           <DarkMode />
           <div className="footer__language">

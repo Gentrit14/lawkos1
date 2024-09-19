@@ -1,6 +1,7 @@
 import React from 'react';
 import './PracticeAreas.scss';
 import { practiceAreasData } from './practiceAreasData';
+import { FormattedMessage } from 'react-intl'
 import { Link } from 'react-router-dom';
 
 
@@ -10,7 +11,7 @@ const PracticeAreas = () => {
         <section className="practice-areas">
             <div className="container">
                 <div className="container2">
-                <h2>Our practice area</h2>
+                <h2><FormattedMessage id='practice-areas-title' defaultMessage='Our practice area' /></h2>
                  
                 <Link to='/' className='button'>
                     <div className='button1'></div>

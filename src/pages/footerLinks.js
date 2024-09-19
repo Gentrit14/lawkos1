@@ -1,29 +1,30 @@
+import { FormattedMessage } from 'react-intl'
 const footerLinks = [
     {
-      title: 'ABOUT',
+      title: <FormattedMessage id='about' defaultMessage='ABOUT' />,
       links: [
-        { label: 'Our Story', url: '#' },
-        { label: 'Our Team', url: '#' },
-        { label: 'Careers', url: '#' },
-        { label: 'Clients & Partners', url: '#' },
+        { label: <FormattedMessage id='footer-link1' defaultMessage='Our Story' />, url: '#' },
+        { label: <FormattedMessage id='footer-link2' defaultMessage='Our Team' />, url: '#' },
+        { label: <FormattedMessage id='footer-link3' defaultMessage='Careers' />, url: '#' },
+        { label: <FormattedMessage id='footer-link4' defaultMessage='Clients & Partners' />, url: '#' },
       ],
     },
     {
-      title: 'SERVICES',
+      title: <FormattedMessage id='services' defaultMessage='SERVICES' />,
       links: [
-        { label: 'Practice Area', url: '#' },
-        { label: 'Solutions', url: '#' },
-        { label: 'Legal Tech', url: '#' },
-        { label: 'Case Studies', url: '#' },
+        { label: <FormattedMessage id='footer-link5' defaultMessage='Practice Area' />, url: '#' },
+        { label: <FormattedMessage id='footer-link6' defaultMessage='Solutions' />, url: '#' },
+        { label: <FormattedMessage id='footer-link7' defaultMessage='Legal Tech' />, url: '#' },
+        { label: <FormattedMessage id='footer-link8' defaultMessage='Case Studies' />, url: '#' },
       ],
     },
     {
-      title: 'RESOURCES',
+      title: <FormattedMessage id='resurces' defaultMessage='RESOURCES' />,
       links: [
-        { label: 'Contact Us', url: '#' },
-        { label: 'Latest News', url: '#' },
-        { label: 'Insights', url: '#' },
-        { label: 'Legal Notices', url: '#' },
+        { label: <FormattedMessage id='footer-link9' defaultMessage='Contact Us' />, url: '#' },
+        { label: <FormattedMessage id='footer-link10' defaultMessage='Latest News' />, url: '#' },
+        { label: <FormattedMessage id='footer-link11' defaultMessage='Insights' />, url: '#' },
+        { label: <FormattedMessage id='footer-link12' defaultMessage='Legal Notices' />, url: '#' },
       ],
     },
   ];

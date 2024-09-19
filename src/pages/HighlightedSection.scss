@@ -27,7 +27,7 @@
         margin-bottom: 15em;
         margin-left: 2em;
         width: 70%;
-        color: #0a0a0a;
+        color: var(--body-color);
 
         h2 {
             font-size: 34px;
@@ -81,4 +81,9 @@
             }
         }
     }
+}
+
+[data-theme="dark"] .highlighted-content {
+    background-image:linear-gradient(to right, rgba(33, 20, 6, 0.5), rgba(33, 20, 6, 0.5)), url('../img/highlited1.jpg');
+   
 }

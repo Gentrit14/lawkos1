@@ -1,65 +1,67 @@
 import { FiBriefcase, FiHome, FiDollarSign, FiShoppingCart, FiShield, FiUsers, FiGlobe, FiZap, FiPenTool, FiKey, FiActivity } from "react-icons/fi";
+import { FormattedMessage } from 'react-intl'
+
 
 export const NavData = [
     {
         icon: <FiBriefcase />,
         class: 'genti1',
-        title: 'Corporate Law',
+        title: <FormattedMessage id='corporate-law' defaultMessage='Corporate Law' />,
         to: '/',
     },
     {
         icon: <FiHome />,
-        title: 'Real Estate',
+        title: <FormattedMessage id='real-estate' defaultMessage='Real Estate' />,
         to: '/',
     },
     {
         icon: <FiDollarSign />,
-        title: 'Tax & Customs Laws',
+        title: <FormattedMessage id='tax-costoms-laws' defaultMessage='Tax & Customs Laws' />,
         to: '/',
     },
     {
         icon: <FiShoppingCart />,
-        title: 'Public Procurement',
+        title: <FormattedMessage id='public-procurement' defaultMessage='Public Procurement' />,
         to: '/',
     },
     {
         icon: <FiShield />,
-        title: 'Banking & Finance',
+        title: <FormattedMessage id='banking-finance' defaultMessage='Banking & Finance' />,
         to: '/',
     },
     {
         icon: <FiUsers />,
-        title: 'Insurance',
+        title: <FormattedMessage id='insurance' defaultMessage='Insurance' />,
         to: '/',
     },
     {
         icon: <FiGlobe />,
-        title: 'Energy & Infrastructure',
+        title: <FormattedMessage id='energy-infrastructure' defaultMessage='Energy & Infrastructure' />,
         to: '/',
     },
     {
         icon: <FiUsers />,
-        title: 'Family Law',
+        title: <FormattedMessage id='family-law' defaultMessage='Family Law' />,
         to: '/',
     },
     {
         icon: <FiZap />,
-        title: 'ICT Sector',
+        title: <FormattedMessage id='ict-sector' defaultMessage='ICT Sector' />,
         to: '/',
     },
     {
         icon: <FiPenTool />,
-        title: 'Labor & Employment',
+        title: <FormattedMessage id='labor-employment' defaultMessage='Labor & Employment' />,
         to: '/',
     },
     {
         icon: <FiKey />,
-        title: 'Intellectual Property Law',
+        title: <FormattedMessage id='intellectual-property-law' defaultMessage='Intellectual Property Law' />,
         to: '/',
     },
     {
         icon: <FiActivity />,
-        title: 'Criminal Law',
+        title: <FormattedMessage id='criminal-law' defaultMessage='Criminal Law' />,
         to: '/',
     }
 ];

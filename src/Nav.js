@@ -1,31 +1,38 @@
-import React, { useState} from 'react';
+import React, { useState , useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import clsx from "clsx";
 import './Nav.scss';
+import { FormattedMessage } from "react-intl";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { LuRectangleVertical } from "react-icons/lu";
+import Arrow2 from './img/arrow2.png';
 import { RiArrowDropDownLine } from "react-icons/ri";
 import ProductsMegamenu from './ProductsMegamenu';
 import ResourcesMegamenu from './ResourcesMegamenu';
 import MobileNav from './components/MobileNav/MobileNav.js';
 
-const Nav = () => {
+const Nav = (props) => {
     const [isMobile, setIsMobile] = useState(false);
     const [showProductsMenu, setShowProductsMenu] = useState(false);
     const [showResourcesMenu, setShowResourcesMenu] = useState(false);
-    const [color, setColor] = useState(false)
-    const changeColor = () => {
-        if (window.scrollY >= 90) {
-            setColor(true)
-        } else {
-            setColor(false)
-        }
-    }
-
-    window.addEventListener('scroll', changeColor)
 
 
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+    const nav = document.querySelector(".nav");
+    const navHeight = nav.scrollHeight;
+
+    const handleScroll = () => {
+      const scrollHeight = window.pageYOffset;
+      setIsSticky(scrollHeight > 25 ? true : false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
     
     const toggleMenu = () => setIsMobile(!isMobile);
 
@@ -63,7 +70,7 @@ const Nav = () => {
 
     return (
         
-            <div className={color ? 'nav nav__sticky' : 'nav'}>
+            <div className={clsx(`nav ${props.styles}`, isSticky ? "nav__sticky" : "")}>
                 
                 <Link to='/' className='nav-logo'>
                     <div className='logo-container'></div>
@@ -73,7 +80,9 @@ const Nav = () => {
 
                 <div className={isMobile ? 'links nav-mobile open' : 'links'}>
                     <div className='nav-link'>
-                        <Link to='/' className='inner-link'>About</Link>
+                        <Link to='/' className='inner-link'>
+                        <FormattedMessage id="about" defaultMessage='About'/> 
+                        </Link>
                     </div>
 
                     {/* Services Megamenu */}
@@ -83,52 +92,14 @@ const Nav = () => {
                         onMouseLeave={() => handleMouseLeave('products')}
                     >
                         <div className="inner-link" onClick={() => isMobile && toggleMegamenu('products')}>
-                            Services
-                            <LuRectangleVertical className='arrow1' />
+                        <FormattedMessage id="services" defaultMessage='Services'/> 
+                            <img src={Arrow2} className='arrow1' alt='arrow1' />
                             <MdKeyboardArrowDown className='arrow2' />
                             <RiArrowDropDownLine className='arrow3' />
                         </div>
                         {!isMobile && showProductsMenu && <ProductsMegamenu />}
-                        {isMobile && showProductsMenu && (
-                            <div className='mobile-megamenu'>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Corporate Law</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Real Estate</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Tax & Customs Laws</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Public Procurement</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Banking & Finance</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Insurance</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Energy & Infrastructure</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Family Law</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>ICT Sector</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Labor & Employment</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Intellectual Property Law</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Criminal Law</Link>
-                                </div>
-                            </div>
-                        )}
+                        
+                        
                     </div>
 
                     {/* Resources Megamenu */}
@@ -138,42 +109,25 @@ const Nav = () => {
                         onMouseLeave={() => handleMouseLeave('resources')}
                     >
                         <div className="inner-link" onClick={() => isMobile && toggleMegamenu('resources')}>
-                            Resources
-                            <LuRectangleVertical className='arrow1' />
+                        <FormattedMessage id="resurces" defaultMessage='Resurces'/> 
+                            <img src={Arrow2} className='arrow1' alt='arrow1' />
                             <MdKeyboardArrowDown className='arrow2' />
                             <RiArrowDropDownLine className='arrow3' />
                         </div>
                         {!isMobile && showResourcesMenu && <ResourcesMegamenu />}
-                        {isMobile && showResourcesMenu && (
-                            <div className='mobile-megamenu'>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Network</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Legal Notice</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Laws of Kosovo</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Insights</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Podcast</Link>
-                                </div>
-                                <div className='nav-link'>
-                                    <Link to='/' className='inner-link'>Contact</Link>
-                                </div>
-                                
-                            </div>
-                        )}
+                        
+                           
                     </div>
 
                     <div className='nav-link'>
-                        <Link to='/' className='inner-link'>News</Link>
+                        <Link to='/' className='inner-link'>
+                        <FormattedMessage id="news" defaultMessage='News'/> 
+                        </Link>
                     </div>
                     <div className='nav-link'>
-                        <Link to='/' className='inner-link'>Careers</Link>
+                        <Link to='/' className='inner-link'>
+                        <FormattedMessage id="careers" defaultMessage='Careers'/> 
+                        </Link>
                     </div>
                     
 
@@ -183,10 +137,10 @@ const Nav = () => {
                             <LuPhoneCall />
                             <div className='number-detail'>
                                 <h6>+383 123 456 789</h6>
-                                <p>Call our office</p>
+                                <p><FormattedMessage id="number-text" defaultMessage='Call our office'/></p>
                             </div>
                         </div>
-                        <Link to='/' className='contact'>Contact us</Link>
+                        <Link to='/' className='contact'><FormattedMessage id="nav-button" defaultMessage='Contact us'/></Link>
                     </div>
                 </div>
 

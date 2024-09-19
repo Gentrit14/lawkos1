@@ -1,58 +1,84 @@
+.testimonial-section2 {
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    margin-bottom: -20px;
+    color: var(--body-color);
+    font-weight: 600;
+  }
+
+   @media (max-width: 1000px){
+    h2 {
+      font-size: 40px;
+
+  }
+   }
+}
+
 .testimonial-section {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f7f7f7;
+    padding: 100px 20px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/Subtraction2.png');
+    background-size: cover;
+    background-position: center;
   
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 40px;
-      font-weight: 600;
-    }
+
   
     .testimonial-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      width: 100%;
+      max-width: 1300px;
       gap: 20px;
     }
   
     .testimonial-card {
       position: relative;
-      width: 300px;
-      padding: 20px;
-      background-color: #f7f7f7;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 480px;
+      padding: 1.5rem;
+      margin: 2rem;
+      background-color: transparent;
+      border-radius: 50px;
       text-align: left;
   
-      .background-shape {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #eef2f3, #f7f7f7);
-        border-radius: 10px;
-        z-index: -1;
-        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-      }
+      .quote{
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: #a07509;
+        font-size: max(30px, 3vw);
+    }
   
       .client-image {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
+        width: 70px;
+        height: 70px;
         margin-bottom: 20px;
       }
   
       .feedback {
         font-size: 1rem;
         margin-bottom: 20px;
-        font-style: italic;
+        color: var(--body-color);
+        &:after {
+          content: '';
+          display: block;
+          width: 130px;
+          height: 1.5px;
+          background-color: #696969;
+          margin: 20px 0;
+        }
       }
   
       .client-name {
         font-weight: 600;
         font-size: 1.1rem;
+        color: var(--body-color);
       }
   
       .client-title {
@@ -60,24 +86,66 @@
         color: gray;
       }
     }
-    .custom-shape-divider-top-1724683460 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
+
+
+  }
+
+  @media (max-width: 1253px) {
+    .testimonial-section{
+      background-image: none;
     }
-    
-    .custom-shape-divider-top-1724683460 svg {
+    .testimonial-container{
+      width: 100%;
+      .testimonial-card {
         position: relative;
-        display: block;
-        width: calc(300% + 1.3px);
-        height: 218px;
-    }
-    
-    .custom-shape-divider-top-1724683460 .shape-fill {
-        fill: #FFFFFF;
+        width: 480px;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: var(--testimonial);
+        border-radius: 50px;
+        text-align: left;
+      }
     }
   }
+
+    @media (min-width: 1330px) {
+      .testimonial-section {
+        text-align: center;
+        padding: 250px 0px;
+        background-color: transparent;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/Subtraction2.png');
+        background-size: cover;
+        background-position: center;        
+   }
+
+}
   
+// Styles for dark theme
+[data-theme="dark"] {
+  .testimonial-section {
+    background-image: url('../img/Subtraction1.png');
+
+    @media (max-width: 1253px) {
+      background-image: none;
+
+      .testimonial-container {
+        width: 100%;
+
+        .testimonial-card {
+          position: relative;
+          width: 480px;
+          padding: 1.5rem;
+          margin: 1rem;
+          height: 20%;
+          background-color: var(--testimonial);
+          border-radius: 50px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -6,30 +6,26 @@
 
 .our-blog-component{
     margin:max(5%, 50px) 0;
-    padding:0 2%;
+    padding:0 0%;
     position: relative;
     z-index: 2;
-    width: 100%;
+    width: 95%;
     max-width: 1400px;
     @media(max-width:1350px){
         padding:0 1.5%;
     }
-    h1{
-        font-size: max(22.5px, 2vw);
-        text-align: center;
-        text-transform: uppercase;
-        line-height: 1.5;
-        @media(max-width:550px){
-            padding:0 2.5%;
-        }
-    }
+
 
     .container2 {
         display: flex;
         flex-direction: column;
-        align-items: left;
+        align-items: left;                  
         max-width: 1300px;
         margin: 0px 70px;
+        @media (max-width: 514px) {
+            justify-content: center;
+            margin: 0px 20px;
+        }
     }
 
     h2 {
@@ -46,25 +42,36 @@
             background-color: var(--body-color);
             margin: 15px 0;
           }
+          
     }
+
+
 
     h6 {
         font-size: 16px;
         height: 40px;
-        width: 600px;
+        width: 590px;
         font-weight: 300;
+
         text-align: left;
         font-family: "Roboto", sans-serif;
     }
 
     @media (max-width: 690px ) {
+        .container2{
+            width: 80%;
+        }
         h2{
-            width: 100%;
-            font-size: 60px;
+            width: 70%;
+            font-size: 40px;
         }
         
         h6{
-            width: 100%;
+            margin-top: -20px;
+            padding-bottom: 50px;
+            width: 80%;
+            font-size: 15px;
+            margin-right: auto;
         }
     }
     .link-container{
@@ -91,13 +98,20 @@
 }
 /* hide disabled buttons */
 .rec.rec-arrow:disabled {
-    visibility: hidden;
+    visibility: s;
 }
 /* disable default outline on focused items */
 /* add custom outline on focused items */
 .rec-carousel-item:focus {
     outline: none;
     box-shadow: inset 0 0 1px 1px lightgrey;
+}
+
+@media(max-width:550px){
+    .rec.rec-arrow {
+        display: none;
+    }
+    
 }
 
 .our-blog-component .slider-item{
@@ -110,6 +124,7 @@
 
     @media(max-width:550px){
         width: 97.5%;
+        
     }
     &:hover{
         background: var(--light-color);
@@ -144,15 +159,18 @@
     }
     .text{
         padding:max(5px, 1vw) max(9px, 0.7vw);
+        
     }
     .date{
         font-size: max(20px, 0.8vw);
         font-weight: bold;
         color: var(--body-color);
+        
     }
     .text a{
         display: flex;
         align-items: center;
+        
         text-decoration: none;
     }
     h6{
@@ -162,11 +180,13 @@
         margin-right: max(15px, 1.25vw);
         line-height: 0;
         color: var(--body-color);
+        
     }
     .circle{
         width: max(33px, 2.5vw);
         height: max(33px, 2.5vw);
         border-radius: 50%;
+        margin-bottom: 70px;
         background-color: #a07509;
         display: flex;
         align-items: center;
@@ -189,6 +209,12 @@
         opacity: 0;
         transition: opacity 0.3s ease, transform 0.3s ease;
       }
+
+      @media (max-width:690px) {
+         h6{
+            margin-top: 30px;
+         }
+      }
   
       &:hover {
         transform: translateY(-5px);
@@ -196,6 +222,11 @@
         .hover-text {
           opacity: 1;
           transform: translateX(-50%) translateY(0);
+        }
+
+        a{
+            color: #a07509 ;
+            text-decoration: none;
         }
     }
 }

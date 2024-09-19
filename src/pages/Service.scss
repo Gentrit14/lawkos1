@@ -1,23 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .services-section {
+    margin-top: 10%;
     padding-top: 5%;
-    text-align: left;
-    width: 100%;
-    max-width: 1300px;
+    width: 99%;
     display: flex;
-    margin: auto;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family: "Roboto", sans-serif;
     background-color: var(--body_background);
   
     .services-title {
-      font-size: 4rem;
-      margin-bottom: -110px;
-      position: relative;
+      font-size: 4rem;;
       font-weight: 400;
-  
       &:after {
         content: '';
         display: block;
@@ -30,22 +25,23 @@
   
     .services-content {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content:space-between;
       background-color: var(--body_background);
-      padding: 20px;
       display: flex;
       border-radius: 10px;
       max-width: 1300px;
-      margin-left: auto;
-      width: 64%;
+      width: 95%;
+      max-width: 1250px;
+
+      
     
       .text-content {
-        flex: 1;
         display: flex;
-        flex-direction: column;
         gap: 50px;
         height: auto;
+        flex-direction: column;
+
+        
   
         .service {
           max-width: 300px;
@@ -76,17 +72,22 @@
       }
     }
   
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       .services-content {
         flex-direction: column;
         align-items: center;
         margin-left: 0;
         margin-top: 100px;
-        width: 90%;
+        width: 99%;
+        
+        .text-content{
+          margin-left: 0;
+          text-align: center;
+        }
 
         .services-title{
             margin-left: 20px;
-            font-size: 3rem;
+            font-size: 40px;
         }
   
         .service-image {

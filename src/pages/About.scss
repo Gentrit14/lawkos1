@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5%;
+    
     padding: 4rem;
+    padding-top: 15%;
     text-align: left;
   
     .about-content {
@@ -14,6 +15,7 @@
       .about-left-right {
         display: flex;
         flex-direction: column;
+
         align-items: flex-start;
         
       }
@@ -54,7 +56,7 @@
           align-items: center;
           justify-content: center;
           width: 100%;
-          max-width: 120px;
+          max-width: 130px;
           border: 1px solid var(--body-color);
           border-radius: 30px;
           padding: 10px 30px;
@@ -82,7 +84,6 @@
         flex-direction: row;
         align-items: center;
         width: 100%;
-        
         margin-bottom: 2rem;
       }
   
@@ -155,8 +156,10 @@
       padding: 2rem;
   
       .about-content {
+
         .about-left-right {
           flex-direction: column;
+          
         }
   
         .about-left {
@@ -165,37 +168,66 @@
           margin-bottom: 2rem;
   
           .main-heading {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
           }
+        }
+
+        .about-right2{
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2rem;
+          text-align: center;
         }
   
         .about-right {
+          display: flex;
           flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
           .experience-number {
-            font-size: 5rem;
+            font-size: 6rem;
+          }
+          .experience-text{
+            max-width: 100%;
+          }
+          .experience-circle {
+            position: absolute;
+            top: 12%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            width: 40%; /* Adjust the size as needed */
+            height: 30%; /* Adjust the size as needed */
+            background: url('../img/Eclipse.png') no-repeat center center;
+            background-size: contain;
           }
         }
       }
   
-      .about-right2 {
-        flex-direction: column;
-        margin-bottom: 2rem;
-      }
+      
   
       .about-images {
+        display: flex;
         flex-direction: column;
   
         .about-image {
-          width: 100%;
+          width: 70%;
           margin-bottom: 1rem;
         }
   
         .about-image1 {
-          width: 100%;
+          width: 70%;
           height: auto; /* Make sure the image maintains aspect ratio */
           margin-bottom: 1rem;
         }
       }
+    }
+
+    .about-right2 {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
     }
   }
   

@@ -1,6 +1,7 @@
 import React from 'react';
 import './HighlightedSection.scss';
 import Highlited2 from '../img/highlited2.png';
+import { FormattedMessage } from 'react-intl'
 
 const HighlightedSection = () => {
     return (
@@ -9,8 +10,8 @@ const HighlightedSection = () => {
                 
                 <div className="text-container">
                     <h2>
-                        From family law to personal injury, we treat your case with the care it deserves. 
-                        Let's protect what matters most to you.
+                    <FormattedMessage id='highlighted-title' defaultMessage='From family law to personal injury, we treat your case with the care it deserves. 
+                        Lets protect what matters most to you.' />
                     </h2>
                 </div>
                 <div className="image-container">

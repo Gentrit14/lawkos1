@@ -6,6 +6,7 @@
   --megamenu-background: #FEFEFE;
   --megamenu-details: #fbf6f1;
   --p-color: #ppp;
+  --testimonial: #F5F2EE;
 }
 
 [data-theme="dark"] {
@@ -16,6 +17,7 @@
   --megamenu-background: #232220;
   --megamenu-details: #312D29;
   --p-color: #fff;
+  --testimonial: #312E29;
 }
 
 * {

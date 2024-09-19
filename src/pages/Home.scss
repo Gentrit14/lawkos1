@@ -6,7 +6,7 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  height: 80vh;
+  height: 90vh;
   font-family: "Roboto", sans-serif;
   padding-top: 7%;
   background-color: var(--body_background);
@@ -19,7 +19,7 @@
     border-radius: 10px;
     margin-bottom: 20px;
     max-width: 1300px;
-    width: 100%;
+    width: 99%;
 
     .home-content2 {
       display: flex;
@@ -54,7 +54,7 @@
       display: flex;
       align-items: center;
       width: 100%;
-      max-width: 230px;
+      max-width: 235px;
       font-family: "Roboto" sans-serif;
       padding: 15px 27px;
       font-size: 0.8rem;
@@ -110,7 +110,7 @@
   }
 
   .seal {
-    display: none;
+    display: flex;
     justify-content: center;
     position: absolute;
     color: white;
@@ -125,6 +125,26 @@
     img {
       width: 100%;
       height: auto;
+    }
+  }
+
+  @media (max-width: 1415px) {
+    .seal {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      color: white;
+      margin-left: 80%;
+      margin-top: 18%;
+      width: 100%;
+      max-width: 210px;
+      height: 190px;
+      z-index: 1;
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -216,12 +236,7 @@
         text-align: center;
       }
 
-      .consultation-button {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-        max-width: 200px;
-        margin-left: auto;
-      }
+
     }
 
     .home-images {

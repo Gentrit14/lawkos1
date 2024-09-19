@@ -4,6 +4,7 @@ import './Card.scss'
 import Carousel from 'react-elastic-carousel'
 import { Data1 } from './data';
 import { LuPlus } from "react-icons/lu";
+import { FormattedMessage } from 'react-intl'
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -30,8 +31,12 @@ const OurBlog = (props) => {
         <div className='component1'>
         <div className='our-blog-component'>
                 <div className="container2">
-                <h2>Our practice area</h2>
-                <h6>Meet the brilliant minds behind LawKos. Our team of skilled lawyers and legal experts  make LawKos your best choice for legal representation.</h6>
+                <h2>
+                <FormattedMessage id='card-header-title' defaultMessage='Meet Our Team' />
+                </h2>
+                <h6>
+                <FormattedMessage id='card-header-title2' defaultMessage='Meet the brilliant minds behind LawKos. Our team of skilled lawyers and legal experts  make LawKos your best choice for legal representation.' />
+                </h6>
                 </div>
 
              <Carousel className="slider styled-arrows" 
@@ -55,9 +60,8 @@ const OurBlog = (props) => {
                                     </Link>
                                 </div>
                                 <div className="hover-text">
-                                    <p>Labinot has been working with LawKos for over 10 
-                                    years. He has helped a lot of our clients achieve their
-                                    goals with their cases...</p>
+                                    <p>{props.description}</p>
+                                    <Link><FormattedMessage id='hover-text-link' defaultMessage='Read More' /></Link>
                                 </div>
                             </div>
                         )
